@@ -36,5 +36,6 @@ db.open(function(err, db) {
     var ps = All(p1, p2);
     ps.then(function(result) {
         console.log(result);
+        db.close();
     });
 });
